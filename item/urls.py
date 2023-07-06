@@ -4,5 +4,6 @@ from . import views
 app_name = 'item'
 urlpatterns = [
     # Add a slash at the end of the path
+    path('new/', views.new, name='new'),
     path('<int:pk>/', views.detail, name='detail'),
 ]
