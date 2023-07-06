@@ -6,4 +6,5 @@ urlpatterns = [
     # Add a slash at the end of the path
     path('new/', views.new, name='new'),
     path('<int:pk>/', views.detail, name='detail'),
+    path('<int:pk>/delete/', views.delete, name='delete'),
 ]
